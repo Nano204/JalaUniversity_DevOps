@@ -154,6 +154,8 @@ Vagrant is an open-source software product for building and maintaining portable
 
 9. Open VirtualBox to watch it running
 
+![This is an image]('./Screenshot from 2022-11-15 09-40-25.png')
+
     <img src="./Screenshot from 2022-11-15 09-40-25.png" alt="Screenshot of virtualbox" style="height: 500px; width: auto;"/>
 
 10. To shutdown the virtual machine use
