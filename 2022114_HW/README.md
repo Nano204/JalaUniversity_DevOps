@@ -1,5 +1,14 @@
 # VirtualBox and Vagrant [14 Nov 2022 Homework]
 
+## The homework
+- Virtualization
+    1. Install VirtualBox in your machine
+    2. Install Vagrant in your machine
+    3. Stand up Fedora 35 VM Server
+    4. Stand up Ubuntu 20.04.x Server LTS VM
+- Concepts
+    + Investigate: What is software architecture and how it is related to Enterprise Architecture
+
 ## What is VirtualBox?
 
 VirtualBox is a hypervisor used to run operating systems in a special environment, called a virtual machine, on top of the existing operating system.
@@ -12,7 +21,7 @@ Vagrant is an open-source software product for building and maintaining portable
 
 1. Install the [VirtualBox](https://archlinux.org/packages/?name=virtualbox) core packages
 
-<pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">sudo</font> <font color="#33FCFF">pacman</font> <font color="#33FCFF">virtualbox</font></pre>
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">sudo</font> <font color="#33FCFF">pacman</font> <font color="#33FCFF">virtualbox</font></pre>
 
 2. Install host modules
 
@@ -117,20 +126,69 @@ Vagrant is an open-source software product for building and maintaining portable
 
 8. Get inside command line of virtual machine
     <pre> <font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">vagrant</font> <font color="#2AA1B3">ssh</font>
-    Last login: Tue Nov 15 12:40:14 2022 from 10.0.2.2
-    [vagrant@fedora35 ~]$</pre>
+    Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.4.0-131-generic x86_64)
+
+    * Documentation:  https://help.ubuntu.com
+    * Management:     https://landscape.canonical.com
+    * Support:        https://ubuntu.com/advantage
+
+    System information as of Tue Nov 15 14:38:11 UTC 2022
+
+    System load:  0.0               Processes:               121
+    Usage of /:   3.5% of 38.70GB   Users logged in:         0
+    Memory usage: 20%               IPv4 address for enp0s3: 10.0.2.15
+    Swap usage:   0%
+
+
+    0 updates can be applied immediately.
+
+
+    The list of available updates is more than a week old.
+    To check for new updates run: sudo apt update
+    New release &apos;22.04.1 LTS&apos; available.
+    Run &apos;do-release-upgrade&apos; to upgrade to it.
+
+
+    <font color="#33DA7A"><b>vagrant@ubuntu-focal</b></font>:<font color="#2A7BDE"><b>~</b></font>$ 
+    </pre>
 
 9. Open VirtualBox to watch it running
+
+    <img src="./Screenshot from 2022-11-15 09-40-25.png" alt="Screenshot of virtualbox" style="height: 500px; width: auto;"/>
+
+10. To shutdown the virtual machine use
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">vagrant</font> <font color="#2AA1B3">halt</font></pre>
+
+11. To destroy the virtual machine use
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">vagrant</font> <font color="#2AA1B3">destroy</font></pre>
+
 
 
 ## Considerations
 
-1. Be sure Safe Virtual Machine mode is enabled in your motherboard and OS
+1. Be sure <font color="#33FCFF">Safe Virtual Machine</font> mode is enabled in your motherboard and OS
 2. In case of finding this error:
     <pre><font color="#C01C28">The private key to connect to the machine via SSH must be owned</font>
     <font color="#C01C28">by the user running Vagrant. This is a strict requirement from</font>
     <font color="#C01C28">SSH itself. Please fix the following key to be owned by the user</font>
     <font color="#C01C28">running Vagrant:</font>
 
-    <font color="#C01C28">/mnt/<font color="#FFE633">specific_dir</font>/.vagrant/machines/default/virtualbox/private_key</font>
-    </pre>
+    <font color="#C01C28">/mnt/<font color="#FFE633">specific_dir</font>/.vagrant/machines/default/virtualbox/private_key</font></pre>
+
+    - If using NTFS format on file system, SSH won't work so it can be disabled on the <font color="#33FCFF">Vagrant</font> adding this lines:
+        ```ruby
+        config.ssh.insert_key=false
+        ```
+
+    - If using a Linux file system check status with:
+    
+        <pre>stat /mnt/<font color="#FFE633">specific_dir</font>/.vagrant/machines/default/virtualbox/private_key</pre>
+        
+        Check actual user with:
+        ```
+        id
+        ```
+
+        Set owner with
+         <pre>chown '[username]' /mnt/<font color="#FFE633">specific_dir</font>/.vagrant/machines/default/virtualbox/private_key</pre>
+        
