@@ -15,7 +15,7 @@ VirtualBox is a hypervisor used to run operating systems in a special environmen
 
 ## What is Vagrant?
 
-Vagrant is an open-source software product for building and maintaining portable virtual software development environments. Vagrant <strong>IS NOT</strong> a virtual machine provider so the user needs to have a provider as <font color="#33FCFF">VirtualBox</font>, <font color="#33FCFF">Hyper-V</font>, <font color="#33FCFF">Docker</font> or <font color="#33FCFF">VMware</font> to work with.
+Vagrant is an open-source software product for building and maintaining portable virtual software development environments. Vagrant <strong>IS NOT</strong> a virtual machine provider so the user needs to have a provider as <font color="#2AA1B3">VirtualBox</font>, <font color="#2AA1B3">Hyper-V</font>, <font color="#2AA1B3">Docker</font> or <font color="#2AA1B3">VMware</font> to work with.
 
 ## Installing VirtualBox in Arch Based Linux
 
@@ -27,25 +27,25 @@ Vagrant is an open-source software product for building and maintaining portable
 
    Can use [virtualbox-host-modules-arch](https://archlinux.org/packages/?name=virtualbox-host-modules-arch) for linux kernel
 
-    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">sudo</font> <font color="#33FCFF">pacman</font> <font color="#33FCFF">virtualbox-host-modules-arch</font></pre>
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">sudo</font> <font color="#2AA1B3">pacman</font> <font color="#2AA1B3">virtualbox-host-modules-arch</font></pre>
 
    or can use [virtualbox-host-dkms](https://archlinux.org/packages/?name=virtualbox-host-dkms) for other kernels
 
-    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">sudo</font> <font color="#33FCFF">pacman</font> <font color="#33FCFF">virtualbox-host-dkms</font></pre>
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">sudo</font> <font color="#2AA1B3">pacman</font> <font color="#2AA1B3">virtualbox-host-dkms</font></pre>
 
 3. Install the appropiate headers package for the kernel
 
    Example: For linux-lts kernel can use [linux-lts-headers](https://archlinux.org/packages/?name=linux-lts-headers)
 
-    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">sudo</font> <font color="#33FCFF">pacman</font> <font color="#33FCFF">linux-lts-headers</font></pre>
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">sudo</font> <font color="#2AA1B3">pacman</font> <font color="#2AA1B3">linux-lts-headers</font></pre>
 
 4. Validate install
 
-    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">virtualbox</font> <font color="#33FCFF">-h</font></pre>
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">virtualbox</font> <font color="#2AA1B3">-h</font></pre>
 
    Reponse should look like this:
 
-    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">virtualbox</font> <font color="#33FCFF">-h</font>
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">virtualbox</font> <font color="#2AA1B3">-h</font>
     Oracle VM VirtualBox VM Selector v7.0.2
     Copyright (C) 2005-2022 Oracle and/or its affiliates
    
@@ -57,14 +57,14 @@ Vagrant is an open-source software product for building and maintaining portable
 
 1. Install the [Vagrant](https://archlinux.org/packages/?name=vagrant) package
 
-   <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">sudo</font> <font color="#33FCFF">pacman</font> <font color="#33FCFF">vagrant</font></pre>
+   <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">sudo</font> <font color="#2AA1B3">pacman</font> <font color="#2AA1B3">vagrant</font></pre>
 
 2. Validate install
-   <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">vagrant</font> <font color="#33FCFF">-v</font>
+   <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">vagrant</font> <font color="#2AA1B3">-v</font>
    </pre>
 
     Reponse should look like this:
-    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">vagrant</font> <font color="#33FCFF">-v</font>
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">vagrant</font> <font color="#2AA1B3">-v</font>
     Vagrant 2.3.2</pre>
 
 ## Using Vagrant
