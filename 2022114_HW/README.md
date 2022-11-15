@@ -193,26 +193,26 @@ Vagrant is an open-source software product for building and maintaining portable
     /mnt/specific_dir/.vagrant/machines/default/virtualbox/private_key
     ```
 
-- If using NTFS format on file system, SSH won't work so it can be disabled on Vagrantfile adding this lines:
+    - If using NTFS format on file system, SSH won't work so it can be disabled on Vagrantfile adding this lines:
 
-  ```ruby
-  config.ssh.insert_key=false
-  ```
+        ```ruby
+        config.ssh.insert_key=false
+        ```
 
-- If using a Linux file system check status with:
+    - If using a Linux file system check status with:
 
-  ```
-  stat /mnt/specific_dir/.vagrant/machines/default/virtualbox/private_key
-  ```
+        ```
+        stat /mnt/specific_dir/.vagrant/machines/default/virtualbox/private_key
+        ```
 
-  Check actual user with:
+        Check actual user with:
 
-  ```
-  id
-  ```
+        ```
+        id
+        ```
 
-  Set owner with
+        Set owner with
 
-  ```
-  chown '[username]' /mnt/specific_dir/.vagrant/machines/default/virtualbox/private_key
-  ```
+        ```
+        chown '[username]' /mnt/specific_dir/.vagrant/machines/default/virtualbox/private_key
+        ```
