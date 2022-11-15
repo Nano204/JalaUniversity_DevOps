@@ -21,7 +21,7 @@ Vagrant is an open-source software product for building and maintaining portable
 
 1. Install the [VirtualBox](https://archlinux.org/packages/?name=virtualbox) core packages
 
-    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#337DFF">sudo</font> <font color="#33FCFF">pacman</font> <font color="#33FCFF">virtualbox</font></pre>
+    <pre><font color="#F66151"><b>╰─λ</b></font> <font color="#12488B">sudo</font> <font color="#2AA1B3">pacman</font> <font color="#2AA1B3">virtualbox</font></pre>
 
 2. Install host modules
 
@@ -166,7 +166,7 @@ Vagrant is an open-source software product for building and maintaining portable
 
 ## Considerations
 
-1. Be sure <font color="#33FCFF">Safe Virtual Machine</font> mode is enabled in your motherboard and OS
+1. Be sure <font color="#2AA1B3">Safe Virtual Machine</font> mode is enabled in your motherboard and OS
 2. In case of finding this error:
     <pre><font color="#C01C28">The private key to connect to the machine via SSH must be owned</font>
     <font color="#C01C28">by the user running Vagrant. This is a strict requirement from</font>
@@ -175,7 +175,7 @@ Vagrant is an open-source software product for building and maintaining portable
 
     <font color="#C01C28">/mnt/<font color="#FFE633">specific_dir</font>/.vagrant/machines/default/virtualbox/private_key</font></pre>
 
-    - If using NTFS format on file system, SSH won't work so it can be disabled on the <font color="#33FCFF">Vagrant</font> adding this lines:
+    - If using NTFS format on file system, SSH won't work so it can be disabled on the <font color="#2AA1B3">Vagrant</font> adding this lines:
         ```ruby
         config.ssh.insert_key=false
         ```
