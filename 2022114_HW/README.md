@@ -177,7 +177,7 @@ Vagrant is an open-source software product for building and maintaining portable
     ╰─λ vagrant destroy
     ```
 
-## Considerations
+## Vagrant on Arch considerations
 
 1.  Be sure **_Safe Virtual Machine_** mode is enabled in your motherboard and OS
 2.  In case of finding this error:
@@ -214,3 +214,39 @@ Vagrant is an open-source software product for building and maintaining portable
         ```
         chown '[username]' /mnt/specific_dir/.vagrant/machines/default/virtualbox/private_key
         ```
+## Arquitecture
+
+_"Más allá de los algoritmos y estructuras de datos de la computación; el diseño y especificación de la estructura global del sistema es un nuevo tipo de problema."_  **An introduction to Software Architecture, David Garlan & Mary Shaw** 
+
+Architecture, referring to software, is a concept that emerged in the 1960s and refers to planning based on models, patterns and theoretical abstractions, when creating a piece of software of a certain complexity and as a prior step to any implementation. In this way, we have a detailed theoretical guide that allows us to understand how each of the pieces of our product or service will fit together.
+
+Therefore, in architecture we call a pattern any general and reusable solution for recurring problems in software engineering in a given context, they are similar to the patterns used in programming, but specifically oriented to the structure at a higher and more generic level.
+
+### Some design patterns
+
+- Client-server pattern
+- Layered pattern
+- Master-slave pattern
+- Model-View-Controller (MVC) pattern
+- Broker pattern
+- Pipelining pattern
+
+([Read more...](https://openwebinars.net/blog/arquitectura-de-software-que-es-y-que-tipos-existen/))
+
+### How Software Architecture is related to Enterprise Architecture
+- Similarities
+   + Methods for specifing architectures
+   + Modeling language and meta models
+   + Reuse approach
+   + Using architecture templates & architecture patterns
+
+</br>
+
+- Diferences
+
+|Enterprise|Software|
+|-|-|
+|Business requirements based|Functional and technological requirements based|
+|Multi-system vision approach|User cases approach|
+|Business scenarios|Software frameworks|
+|Business strategy & Business operation guided|Software lifecycle guided|
