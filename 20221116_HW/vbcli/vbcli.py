@@ -14,8 +14,7 @@ if input_request == "list":
         sys.exit()
     for m in vbox.machines:
         print(m.name)
-
-if input_request == "up":
+elif input_request == "up":
     if len(sys.argv) < 3:
         print('You need to specify the box name to stand up')
         sys.exit()
@@ -27,8 +26,7 @@ if input_request == "up":
     machine = vbox.find_machine(name)
     progress = machine.launch_vm_process(session, "gui", [])
     progress.wait_for_completion()
-
-if input_request == "create":
+elif input_request == "create":
     if len(sys.argv) < 3:
         print('You need to specify the name of the box')
         sys.exit()
@@ -39,8 +37,7 @@ if input_request == "create":
     machine = vbox.create_machine("", name, [], "Linux", "")
     vbox.register_machine(machine)
     sys.exit()
-
-if input_request == "delete":
+elif input_request == "delete":
     if len(sys.argv) < 3:
         print('You need to specify the name of the box')
         sys.exit()
@@ -51,3 +48,5 @@ if input_request == "delete":
     machine = vbox.find_machine(name)
     machine.rm(delete=True)
     sys.exit()
+else:
+    print("Command not available")
