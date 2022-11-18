@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Make build call
-      run: curl -H "Authorization:dXNlcjEyMzQ6MTExY2ZiMjQxZGY2YzFmYThiMzJkNzI5NTdkMDU2YTI0Yw==" -X POST http://localhost:8080/job/DevOps%20_HW/build
+      run: curl POST http://localhost:8080/job/DevOps%20_HW/build --user user1234:password1234
+      
+#-H "Authorization:dXNlcjEyMzQ6MTExY2ZiMjQxZGY2YzFmYThiMzJkNzI5NTdkMDU2YTI0Yw==" -X
