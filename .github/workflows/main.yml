@@ -1,0 +1,9 @@
+name: Jenkins Build
+
+on:[push]
+
+jobs:
+  build_jenkins:
+    steps:
+      name: Make build call
+      uses: curl -H "Authorization: dXNlcjEyMzQ6MTExY2ZiMjQxZGY2YzFmYThiMzJkNzI5NTdkMDU2YTI0Yw==" -X POST http://localhost:8080/job/DevOps%20_HW/build
