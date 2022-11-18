@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Make build call
-      run: curl POST http://localhost:8080/job/DevOps%20_HW/build --user user1234:password1234
+      run: curl -X POST http://localhost:8080/job/DevOps%20_HW/build --user user1234:111cfb241df6c1fa8b32d72957d056a24c -H 'Jenkins-Crumb:39cffda8821856a77bb4b6e32d0bd20bfc8ae438ba826900bb05d2b325203e61'
       
 #-H "Authorization:dXNlcjEyMzQ6MTExY2ZiMjQxZGY2YzFmYThiMzJkNzI5NTdkMDU2YTI0Yw==" -X
