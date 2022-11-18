@@ -1,3 +1,3 @@
-var="Hello World"
+var="Hello World - Post Build"
  
 echo "$var"
