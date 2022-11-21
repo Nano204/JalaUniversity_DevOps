@@ -1,17 +1,12 @@
 pipeline {
     agent any
     environment { 
-        CC = 'clang'
+        TEST_PREFIX = 'Hello Wolrd!'
     }
     stages {
         stage('Example') {
-            environment { 
-                DEBUG_FLAGS = '-g'
-            }
             steps {
-                sh 'printenv'
-                echo "Hello World!"
-                echo $CC
+                sh 'printenv TEST_PREFIX'
             }
         }
     }
