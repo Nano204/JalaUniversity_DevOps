@@ -7,6 +7,7 @@ pipeline {
         stage('Checkout Scm') {
             steps {
                 git 'https://github.com/Nano204/JalaUniversity_DevOps.git'
+                echo $TEST_PREFIX
             }
         }
         stage("build") {
