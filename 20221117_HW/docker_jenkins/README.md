@@ -4,15 +4,15 @@
 
 1. Make sure your Jenkins installation is working online. If it is working at a localhost, it can be used the localtunnel package to make it available online. Using the nex command:
 
-   ```
-   npx localtunnel --port <port_number> --subdomain <subdomain_name>
-   ```
+```
+npx localtunnel --port <port_number> --subdomain <subdomain_name>
+```
 
 Example:
-         
-            ╰─λ npx localtunnel --port 8080 --subdomain nanojenkinstest 
-            your url is: https://nanojenkinstest.loca.lt
-    
+
+╰─λ npx localtunnel --port 8080 --subdomain nanojenkinstest
+your url is: https://nanojenkinstest.loca.lt
+
 2. To install the connection plugin on Jenkins, go to Dashboard > Manage Jenkins > Plugin Manager > Available plugins and search for GitHub Integration Plugin. Install it and wait Jenkins for restart.
 
 3. Go to new item and create a new freestyle project.
@@ -27,9 +27,8 @@ Example:
 
 Example:
 
-   ```
-   https://nanojenkinstest.loca.lt/github-webhook/
-   ```
+```
+https://nanojenkinstest.loca.lt/github-webhook/
+```
 
 8. Establish content type. Use application/json. Set `Just the push event` as trigger action. Set the webhook as active.
-
