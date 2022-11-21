@@ -10,6 +10,8 @@ pipeline {
             }
             steps {
                 sh 'printenv'
+                echo "Hello World!"
+                echo $CC
             }
         }
     }
