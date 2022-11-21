@@ -17,13 +17,31 @@ your url is: https://nanojenkinstest.loca.lt
 
 2. To install the connection plugin on Jenkins, go to Dashboard > Manage Jenkins > Plugin Manager > Available plugins and search for GitHub Integration Plugin. Install it and wait Jenkins for restart.
 
-3. Go to new item and create a new freestyle project.
+3. Go to new item and create a new Pipeline project.
 
 4. On General select GitHub project and add the URL of the project. On Source Code Management select Git and add the repository URL (Use the https clonning URL)
 
 5. The GitHub Integration plugin must created the GitHub hook trigger for GITScm polling under Build Triggers section. Select it.
 
-6. Declare your building steps.
+6. On Pipeline select Pipeline script from source. On SCM select Git and the script path must be Jenkinsfile by default or the path where is located the Jenkinsfile.
+
+Example of Jenkisfile
+```
+pipeline {
+    agent any
+    environment { 
+        TEST_PREFIX = 'Hello Wolrd!'
+    }
+    stages {
+        stage('Example') {
+            steps {
+                sh 'printenv TEST_PREFIX'
+                sh './20221117_HW/scripts/hello_world.sh'
+            }
+        }
+    }
+}
+```
 
 7. Go to GitHub to creat a webhook. Go to the repository where the project is, go Settings > Webhooks > Add webhook. In the payload use the the internet URL where Jenkins is located. If using localtunnel then uses the URL provided step 1. And add `github-webhook` to it.
 
