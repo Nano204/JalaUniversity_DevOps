@@ -10,8 +10,10 @@ npx localtunnel --port <port_number> --subdomain <subdomain_name>
 
 Example:
 
+```
 ╰─λ npx localtunnel --port 8080 --subdomain nanojenkinstest
 your url is: https://nanojenkinstest.loca.lt
+```
 
 2. To install the connection plugin on Jenkins, go to Dashboard > Manage Jenkins > Plugin Manager > Available plugins and search for GitHub Integration Plugin. Install it and wait Jenkins for restart.
 
