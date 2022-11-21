@@ -5,7 +5,7 @@ pipeline {
         TEST_PREFIX = "HelloWorld!!"
     }
     stages {
-        stage("Hello World!!") {
+        stage("build") {
             steps {
                 echo $TEST_PREFIX
             }
