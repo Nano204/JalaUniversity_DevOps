@@ -1,18 +1,15 @@
 pipeline {
     agent any
-    environment {
-        TEST_PREFIX = "HelloWorld!!"
+    environment { 
+        CC = 'clang'
     }
     stages {
-        // stage('Checkout Scm') {
-        //     steps {
-        //         git 'https://github.com/Nano204/JalaUniversity_DevOps.git'
-        //         echo "Hello world!"
-        //     }
-        // }
-        stage("build") {
+        stage('Example') {
+            environment { 
+                DEBUG_FLAGS = '-g'
+            }
             steps {
-                echo $TEST_PREFIX
+                sh 'printenv'
             }
         }
     }
