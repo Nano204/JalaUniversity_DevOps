@@ -7,6 +7,7 @@ pipeline {
         stage('Example') {
             steps {
                 sh 'printenv TEST_PREFIX'
+                sh './20221117_HW/scripts/hello_world.sh'
             }
         }
     }
