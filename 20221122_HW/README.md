@@ -1,5 +1,15 @@
 # Dockerfile [22 Nov 2022 Homework]
 
+## Docker & Podman primary differences
+
+| Item            | Docker                              | Podman                              |
+| --------------- | ----------------------------------- | ----------------------------------- |
+| Architecture    | Daemon                              | Daemon-less (Systemd service)       |
+| Privileges      | Require root privileges             | Normal user                         |
+| Security        | Attacker gains access to OS as root | As normal doesn't have access to OS |
+| Building images | Self-sufficiente                    | Buildah assisted                    |
+| Package         | All in one, monolitic               | Modular approach, specialized tools |
+
 ## Creating a React project in a container
 
 1. Create a Dockerfile with folder explorer or using:
@@ -41,6 +51,7 @@ docker images
 ```
 
 5. Run the container based on the created image by using
+
 ```bash
 docker run -v <local/absolute/path/direction>/react-dockerized-app:/usr/src/app/react-dockerized-app -p 3000:3000 -d --name <container name> <project name>
 #Use -p to redirect a public port to a private port inside the container (In this case we will se the exposed port 3000 in localhost:3000)
@@ -52,11 +63,13 @@ docker run -v <local/absolute/path/direction>/react-dockerized-app:/usr/src/app/
 6. Use a browser and go to `http://localhost:3000/`. To test React is working.
 
 7. To stop the container use:
+
 ```
 docker stop <container name>
 ```
 
 8. In case you want to run the container again use:
+
 ```
 docker start <container name>
 ```
