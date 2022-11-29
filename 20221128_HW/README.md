@@ -13,7 +13,7 @@
 4. Go to providers's documentation and compy the `Example of usage` in a new `main.tf` file.
 5. Make some changes on `main.tf`. For example, if using the exact code find on `Example of usage`, iis possible to find this error:
 
-```js
+```terraform
 Error: container exited immediately
 ```
 
@@ -38,17 +38,17 @@ This will help to keep container running for 30 seconds and will help to test if
 6. Initialize Terraform in the folder where `main.tf` is located.
 
 ```
-terraform init
+╰─λ terraform init
 ```
 
 7. Then test in dry what Terraform would do.\
 
 ```
-terraform plan
+╰─λ terraform plan
 ```
 
 8. Run Terraform
 
 ```
-terraform apply
+╰─λ terraform apply
 ```
