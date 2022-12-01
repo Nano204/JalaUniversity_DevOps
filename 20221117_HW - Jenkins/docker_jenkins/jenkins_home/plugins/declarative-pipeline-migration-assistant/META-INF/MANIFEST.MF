@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.1
+Build-Jdk-Spec: 11
+Extension-Name: declarative-pipeline-migration-assistant
+Implementation-Title: declarative-pipeline-migration-assistant
+Implementation-Version: 1.5.2
+Specification-Title: Declarative Pipeline Migration Assistant Plugin.
+Group-Id: org.jenkins-ci.plugins.to-declarative
+Short-Name: declarative-pipeline-migration-assistant
+Long-Name: Declarative Pipeline Migration Assistant
+Url: https://github.com/jenkinsci/declarative-pipeline-migration-assista
+ nt-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.5.2
+Hudson-Version: 2.289.3
+Jenkins-Version: 2.289.3
+Plugin-Dependencies: github:1.34.1;resolution:=optional,lockable-resourc
+ es:2.14;resolution:=optional,declarative-pipeline-migration-assistant-a
+ pi:1.5.2,workflow-api:2.47,workflow-cps:2.94,workflow-job:2.41,build-ti
+ meout:1.18;resolution:=optional,config-file-provider:3.6.3;resolution:=
+ optional,credentials-binding:1.27,credentials:2.6.1,git:4.9.0;resolutio
+ n:=optional,htmlpublisher:1.29;resolution:=optional,junit:1.53;resoluti
+ on:=optional,mailer:1.34,ssh-credentials:1.19;resolution:=optional,stru
+ cts:1.23,variant:1.4,pipeline-model-api:1.9.2,pipeline-model-definition
+ :1.9.2
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/declarative-pipeline-migrati
+ on-assistant-plugin/declarative-pipeline-migration-assistant
+

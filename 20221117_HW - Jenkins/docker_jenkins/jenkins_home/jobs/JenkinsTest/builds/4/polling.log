@@ -1,0 +1,14 @@
+Started on Nov 21, 2022, 3:49:02 PM
+Started by event from 140.82.115.144 ⇒ https://nanojenkinstest.loca.lt/github-webhook/ on Mon Nov 21 15:49:02 UTC 2022
+Using strategy: Default
+[poll] Last Built Revision: Revision aebab20429de0518f35af3033e2d7b88c5aff2bd (refs/remotes/origin/main)
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git ls-remote -h -- https://github.com/Nano204/JalaUniversity_DevOps # timeout=10
+Found 1 remote heads on https://github.com/Nano204/JalaUniversity_DevOps
+[poll] Latest remote head revision on refs/heads/main is: 3adaba8980943f2d4837108c5dd9495d60d34941
+Done. Took 0.49 sec
+Changes found

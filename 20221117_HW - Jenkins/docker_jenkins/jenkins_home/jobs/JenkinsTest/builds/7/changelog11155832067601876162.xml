@@ -1,0 +1,10 @@
+commit 8c0c91ef91c986f18104f9c7d932abab1910c211
+tree 10663301200995581ec10cfa950d85f98893ed93
+parent 67b0f97dd5a1c1f211936c83b4f817a22f4044d2
+author Nano204 <fgomeztenorio@hotmail.com> 2022-11-21 10:57:18 -0500
+committer Nano204 <fgomeztenorio@hotmail.com> 2022-11-21 10:57:18 -0500
+
+    Playing with Jenkinsfile
+
+
+:100644 100644 c1ac92d4c5e3299d8af5eae36b5f5b30283935a9 e644e828f37432e24f4da9a7a7ada1ba6648bd9b M	Jenkinsfile

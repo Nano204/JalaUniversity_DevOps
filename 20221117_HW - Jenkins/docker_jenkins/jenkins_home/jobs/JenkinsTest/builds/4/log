@@ -1,0 +1,97 @@
+Started by GitHub push by Nano204
+Obtained Jenkinsfile from git https://github.com/Nano204/JalaUniversity_DevOps
+[8mha:////4EgnJqrO7KFyR9qPBlY7oB47FsnWtVJ0AFSDncocZHemAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4IcdvTfHHeWcEaejtJ3kQ55PXDUwTAC4KaOrkC1sDKPFAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4I5RiS10gx4ZNT6SX0sqG8eJKks+f4QzJtNTSq87vGqNAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgYZ/dzEvMT0VP3k/NyC0pLUIn2NpNLMnBLdzDxNfQB9z6/O0QAAAA==[0mJenkins in /var/jenkins_home/workspace/JenkinsTest
+[8mha:////4OO0L0MVTQRKrDcDNerjFOwqnz6VCOigwvdn+ckvCnxgAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4MRhKPZBsb+CNUEuuhMKZuBo+no/kbWealnEaK9LKUq2AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4FXxrMuB8az3VBcV/tzB+NgJE+haNsK+OcgF9Q91bQUMAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4Hr+itAASB6Wvt/+8wcGZFdsgcA/l+l6JlOLh1KnnP27AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+Selected Git installation does not exist. Using Default
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/JenkinsTest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Nano204/JalaUniversity_DevOps # timeout=10
+Fetching upstream changes from https://github.com/Nano204/JalaUniversity_DevOps
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/Nano204/JalaUniversity_DevOps +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 3adaba8980943f2d4837108c5dd9495d60d34941 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 3adaba8980943f2d4837108c5dd9495d60d34941 # timeout=10
+Commit message: "Fixing Jenkinsfile"
+ > git rev-list --no-walk aebab20429de0518f35af3033e2d7b88c5aff2bd # timeout=10
+[8mha:////4GRbuJ2EAGVwoPu1mHAlU5lG3C5G/Fkgt9TjkLkYWH3VAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4C/rI4EkYIg867MEbpP1eE/MiXkTgDQmmMlr4SIfeok3AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4MJ2konPDsxXRlHJ1C3CHmBAkaydjuVk5q4u61E1w5zqAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4JbY67ItXDtKBfUb7YzgFVRLNYcEGqjGy6rNsycRFALuAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4HD2L7A70JFpp0wUrxVjBJ2kGt9nwzOgMaCUtWCD3vHVAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] withEnv
+[8mha:////4Ju0I7YxO5ztom6nC8vGLJAI6oBHfevCx1/Q1eBAFjIwAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4NOE+9ClAvrXuwLxYnssDOBlXdI4SeUtEieSX0HxRIN8AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] stage
+[8mha:////4AoC4n6PnEU/gu/s3+01R8L/5OyvBMY+O10/jrT1/ep2AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] { (Example)
+[8mha:////4Ktg0oO0af7PlP4HSxVIzBAQq7wt7CSSSkdmeVbtKrYbAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] withEnv
+[8mha:////4AQZ3SjT1uPwgvzOlAlQ19EiI/U1P51iT4wrpxbNlpRAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] {
+[8mha:////4O0WsBLFUk84k8E25LaX58Gb1F0iCRg9pcFKMLP91oYnAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKpAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHNxXfVKy+AAAA[0m[Pipeline] sh
++ printenv
+JENKINS_HOME=/var/jenkins_home
+JENKINS_UC_EXPERIMENTAL=https://updates.jenkins.io/experimental
+CI=true
+RUN_CHANGES_DISPLAY_URL=http://localhost:8080/job/JenkinsTest/4/display/redirect?page=changes
+HOSTNAME=180b94a112ac
+NODE_LABELS=built-in
+HUDSON_URL=http://localhost:8080/
+GIT_COMMIT=3adaba8980943f2d4837108c5dd9495d60d34941
+SHLVL=0
+HOME=/root
+BUILD_URL=http://localhost:8080/job/JenkinsTest/4/
+HUDSON_COOKIE=2f9ddb2c-c94a-4b01-b3cb-afdbf6fcdf6e
+JENKINS_SERVER_COOKIE=durable-a8d07e3b45c8e19ae336635a09b81a35abd4cb306c3f09789ccfd9821139215a
+JENKINS_UC=https://updates.jenkins.io
+WORKSPACE=/var/jenkins_home/workspace/JenkinsTest
+REF=/usr/share/jenkins/ref
+NODE_NAME=built-in
+RUN_ARTIFACTS_DISPLAY_URL=http://localhost:8080/job/JenkinsTest/4/display/redirect?page=artifacts
+STAGE_NAME=Example
+EXECUTOR_NUMBER=0
+GIT_BRANCH=origin/main
+JENKINS_VERSION=2.378
+RUN_TESTS_DISPLAY_URL=http://localhost:8080/job/JenkinsTest/4/display/redirect?page=tests
+JENKINS_INCREMENTALS_REPO_MIRROR=https://repo.jenkins-ci.org/incrementals
+BUILD_DISPLAY_NAME=#4
+HUDSON_HOME=/var/jenkins_home
+JOB_BASE_NAME=JenkinsTest
+PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+BUILD_ID=4
+BUILD_TAG=jenkins-JenkinsTest-4
+LANG=C.UTF-8
+JENKINS_URL=http://localhost:8080/
+JOB_URL=http://localhost:8080/job/JenkinsTest/
+GIT_URL=https://github.com/Nano204/JalaUniversity_DevOps
+BUILD_NUMBER=4
+JENKINS_NODE_COOKIE=715aa432-487a-4acf-b8f4-60ca2bf8909f
+RUN_DISPLAY_URL=http://localhost:8080/job/JenkinsTest/4/display/redirect
+JENKINS_SLAVE_AGENT_PORT=50000
+HUDSON_SERVER_COOKIE=e17aada200dde0ca
+JOB_DISPLAY_URL=http://localhost:8080/job/JenkinsTest/display/redirect
+JOB_NAME=JenkinsTest
+COPY_REFERENCE_FILE_LOG=/var/jenkins_home/copy_reference_file.log
+JAVA_HOME=/opt/java/openjdk
+PWD=/var/jenkins_home/workspace/JenkinsTest
+GIT_PREVIOUS_COMMIT=aebab20429de0518f35af3033e2d7b88c5aff2bd
+DEBUG_FLAGS=-g
+WORKSPACE_TMP=/var/jenkins_home/workspace/JenkinsTest@tmp
+CC=clang
+[8mha:////4NgPVzv353NM4akmh3y3kXNmwLp/pxRHNc+SJKDgZZkEAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKoQQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N9Jjga++AAAA[0m[Pipeline] }
+[8mha:////4IqNjdxA4Y6yq2UxTtGXMIN/ALazdQD9aX0m6XfVhhuyAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFDQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AERGGHOvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4Lpp9SLSAnuprMUTt+E2SCk1nrdcUF07jSCZMBKcuNL4AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiIFEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEOmjScvgAAAA==[0m[Pipeline] }
+[8mha:////4Ekcibw+CpiRLerg6vFLn9YjLbq5F8ut3KSHyrXnQk2cAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRER2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPjbYp22+AAAA[0m[Pipeline] // stage
+[8mha:////4NvYlpRTC491nNeeNZ2o0yL4JM7zxjF+M+OPVVuAbU67AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiSImo0lppeIGJjXFi3RnbIal4EV/jD1hEomKL1c4283rDOgY4cTDYaxosxc6id6PJCycOw9XxhD1fsGOK7DS2empZ6WbBlpOGJUUJKwEbTZ3jaMkk2IpePmTlJJnqnEL+jgJKq+7whEJkc5IhfWEOsLuNKjL9PH8FMHufoDzUufb1BzCenzi+AAAA[0m[Pipeline] }
+[8mha:////4I69ztBj3Uf+E7MrZnmPA9fa8MdDLlevbMuRxLi2UuRnAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIRER2iSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGV9yLWvPx6enVK+AAAA[0m[Pipeline] // withEnv
+[8mha:////4HFyKC7yyM0Bw1NONNyvQabp6qBy36DQBngyvFpr4q9jAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiIFEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QEBHMgAvgAAAA==[0m[Pipeline] }
+[8mha:////4HK2qmaVxQg/QldT2LhpG9oHNnXkDUcZzVMdo/aHIMbdAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFDQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Iddu+wE5XlvxvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4IZ4/M8diP2tUZl69/LaIM2MTy1UcQhfLGopjFPp2OIkAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREBIFoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/uBdnuAzuF8ea9AAAA[0m[Pipeline] }
+[8mha:////4KdYuqtqXiDDhVjm3CTvgbR5944pyh+WZyyRmrknaLbJAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoEFCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9AEmHxfq9AAAA[0m[Pipeline] // node
+[8mha:////4GiRXhI+QhT6Qtu3ulIfvJMAHkS5ZzN4bybKMq4n6zO4AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkbMY4uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwAb56isL0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

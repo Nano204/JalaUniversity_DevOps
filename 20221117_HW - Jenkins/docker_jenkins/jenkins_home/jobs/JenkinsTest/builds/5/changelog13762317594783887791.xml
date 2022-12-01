@@ -1,0 +1,10 @@
+commit 7b779ce3de722ebb71abf7deff8b2baf01bfecdf
+tree 5eafad09cf6411b4f7509f1ccdf585cca64f97f3
+parent 3adaba8980943f2d4837108c5dd9495d60d34941
+author Nano204 <fgomeztenorio@hotmail.com> 2022-11-21 10:52:47 -0500
+committer Nano204 <fgomeztenorio@hotmail.com> 2022-11-21 10:52:47 -0500
+
+    Fixing Jenkinsfile
+
+
+:100644 100644 97357a3576c24ce6aaa1e589fc983d2aae1d3fa3 996977a61ab7606f7cd99f56b36ba0a9cd0df190 M	Jenkinsfile

@@ -1,0 +1,11 @@
+commit ba9ae21ca6fefc8945ff346416edd079e7b6959d
+tree baf44ae44a6140ef8ee82fa27195688952571568
+parent 8c0c91ef91c986f18104f9c7d932abab1910c211
+author Nano204 <fgomeztenorio@hotmail.com> 2022-11-21 16:29:36 -0500
+committer Nano204 <fgomeztenorio@hotmail.com> 2022-11-21 16:29:36 -0500
+
+    README.md fix with Pipeline project
+
+
+:100644 100644 e644e828f37432e24f4da9a7a7ada1ba6648bd9b e644e828f37432e24f4da9a7a7ada1ba6648bd9b R100	Jenkinsfile	20221117_HW/Jenkinsfile
+:100644 100644 daffc6f5f3c2f3d2885cf88c0055846e22ce5146 7f3a17e5b5870fc7d72ca46329b980b855e31431 M	20221117_HW/README.md
