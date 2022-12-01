@@ -1,1 +1,0 @@
-{"virtualbox":{"/home/vagrant/ansible":{"guestpath":"/home/vagrant/ansible","hostpath":"/home/nano/Downloads/VM/vagrant-ubuntu-box/ansible","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/nano/Downloads/VM/vagrant-ubuntu-box","disabled":false,"__vagrantfile":true}}}
